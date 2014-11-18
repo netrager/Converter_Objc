@@ -29,6 +29,7 @@
 		4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */; };
 		CF1EAB321A1B58F4000BBA07 /* ConverterControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EAB311A1B58F4000BBA07 /* ConverterControllerTest.m */; };
 		CF1EAB351A1B7813000BBA07 /* NumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EAB341A1B7813000BBA07 /* NumberPad.m */; };
+		CF1EAB371A1B8249000BBA07 /* NumberPadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EAB361A1B8249000BBA07 /* NumberPadTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CF1EAB311A1B58F4000BBA07 /* ConverterControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterControllerTest.m; sourceTree = "<group>"; };
 		CF1EAB331A1B7813000BBA07 /* NumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberPad.h; sourceTree = "<group>"; };
 		CF1EAB341A1B7813000BBA07 /* NumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberPad.m; sourceTree = "<group>"; };
+		CF1EAB361A1B8249000BBA07 /* NumberPadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberPadTest.m; sourceTree = "<group>"; };
 		CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				268528F21A14BBA100BCDACB /* SmokeUnitTest.m */,
 				26D174551A14FA9C00021DC0 /* CurrencyRateUpdater */,
 				CF1EAB311A1B58F4000BBA07 /* ConverterControllerTest.m */,
+				CF1EAB361A1B8249000BBA07 /* NumberPadTest.m */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1EAB371A1B8249000BBA07 /* NumberPadTest.m in Sources */,
 				26D174531A14F50300021DC0 /* CurrencyRateUpdaterTest.m in Sources */,
 				268528F31A14BBA100BCDACB /* SmokeUnitTest.m in Sources */,
 				CF1EAB321A1B58F4000BBA07 /* ConverterControllerTest.m in Sources */,

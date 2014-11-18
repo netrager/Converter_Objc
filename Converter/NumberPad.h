@@ -10,7 +10,8 @@
 
 @interface NumberPad : NSObject
 
+@property (nonatomic, readonly) NSString *currentValue;
+
 - (void)buttonTouched:(id)sender;
-- (NSString*)currentValue;
 - (BOOL)hasStartingZero;
 @end

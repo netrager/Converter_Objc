@@ -14,14 +14,13 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	self.displayLabel.text = @"";
+	
     self.numberPad = [[NumberPad alloc] init];
+    self.displayLabel.text = self.numberPad.currentValue;
 }
 
 - (IBAction)buttonTouched:(id)sender {
-//    self.displayLabel.text = [NSString stringWithFormat:@"%ld", (long)[sender tag]];
     [self.numberPad buttonTouched:sender];
     self.displayLabel.text = [self.numberPad currentValue];
-
 }
 @end

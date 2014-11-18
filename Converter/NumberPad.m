@@ -9,10 +9,19 @@
 #import "NumberPad.h"
 
 @interface NumberPad ()
-@property (nonatomic, copy) NSString *currentValue;
+@property (nonatomic) NSString *currentValue;
 @end
 
 @implementation NumberPad
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.currentValue = @"";
+    }
+    return self;
+}
 
 - (void)buttonTouched:(id)sender{
    // self.currentValue = [NSString stringWithFormat:@"%ld", (long)[sender tag]];

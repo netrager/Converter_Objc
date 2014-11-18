@@ -76,37 +76,35 @@
     [verify(displayLabel) setText:@"42"];
 }
 
-//- (void)testStory2{ //Eingabe einer ganzen Zahl
-//    [controller buttonTouched:[self buttonWithTag:1]];
-//    [controller buttonTouched:[self buttonWithTag:2]];
-//    [controller buttonTouched:[self buttonWithTag:4]];
-//    
-//    assertThat(displayLabel.text, is(@"124"));
-//}
-//
-//- (void)testStory3{ //Beschränke die Länge
-//    /* // first but bad readable
-//    [controller buttonTouched:[self buttonWithTag:1]];
-//    [controller buttonTouched:[self buttonWithTag:2]];
-//    [controller buttonTouched:[self buttonWithTag:3]];
-//    [controller buttonTouched:[self buttonWithTag:4]];
-//    [controller buttonTouched:[self buttonWithTag:5]];
-//    [controller buttonTouched:[self buttonWithTag:6]];
-//    [controller buttonTouched:[self buttonWithTag:7]];
-//    [controller buttonTouched:[self buttonWithTag:8]];
-//    [controller buttonTouched:[self buttonWithTag:9]];
-//    [controller buttonTouched:[self buttonWithTag:0]];
-//    [controller buttonTouched:[self buttonWithTag:1]];
-//    
-//    assertThatInt(displayLabel.text.length, equalToInt(10));
-//     
-//     */
-//    
-//    displayLabel.text = @"123456789";
+
+
+- (void)testStory3{ //Beschränke die Länge
+    /* // first but bad readable
+    [controller buttonTouched:[self buttonWithTag:1]];
+    [controller buttonTouched:[self buttonWithTag:2]];
+    [controller buttonTouched:[self buttonWithTag:3]];
+    [controller buttonTouched:[self buttonWithTag:4]];
+    [controller buttonTouched:[self buttonWithTag:5]];
+    [controller buttonTouched:[self buttonWithTag:6]];
+    [controller buttonTouched:[self buttonWithTag:7]];
+    [controller buttonTouched:[self buttonWithTag:8]];
+    [controller buttonTouched:[self buttonWithTag:9]];
+    [controller buttonTouched:[self buttonWithTag:0]];
+    [controller buttonTouched:[self buttonWithTag:1]];
+    
+    assertThatInt(displayLabel.text.length, equalToInt(10));
+     
+     */
+    
+//    displayLabel.text = @"1234567890";
 //    [controller buttonTouched:[self buttonWithTag:1]];
 //    assertThatInt(displayLabel.text.length, equalToInt(10));
-//
-//}
+    
+    [given(controller.displayLabel.text) willReturn:@"1234567890"];
+    [controller buttonTouched:[self buttonWithTag:1]];
+    assertThatInt(controller.displayLabel.text.length, equalToInt(10));
+
+}
 //
 //- (void)testNurEineFuehrendeNull{ //Story 4
 //    displayLabel.text = @"";
