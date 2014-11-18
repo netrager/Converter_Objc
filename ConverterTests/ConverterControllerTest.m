@@ -68,4 +68,27 @@
     assertThat(displayLabel.text, is(@"124"));
 }
 
+- (void)testStory3{
+    /* // first but bad readable
+    [controller buttonTouched:[self buttonWithTag:1]];
+    [controller buttonTouched:[self buttonWithTag:2]];
+    [controller buttonTouched:[self buttonWithTag:3]];
+    [controller buttonTouched:[self buttonWithTag:4]];
+    [controller buttonTouched:[self buttonWithTag:5]];
+    [controller buttonTouched:[self buttonWithTag:6]];
+    [controller buttonTouched:[self buttonWithTag:7]];
+    [controller buttonTouched:[self buttonWithTag:8]];
+    [controller buttonTouched:[self buttonWithTag:9]];
+    [controller buttonTouched:[self buttonWithTag:0]];
+    [controller buttonTouched:[self buttonWithTag:1]];
+    
+    assertThatInt(displayLabel.text.length, equalToInt(10));
+     
+     */
+    
+    displayLabel.text = @"123456789";
+    [controller buttonTouched:[self buttonWithTag:1]];
+    assertThatInt(displayLabel.text.length, equalToInt(10));
+
+}
 @end
