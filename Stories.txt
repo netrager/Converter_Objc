@@ -9,7 +9,7 @@ so aktuell wie möglich aus dem Internet ermittelt.
 
 
 ----------------------------------
-- Story #1: Eibgabe einer Ziffer -
+- Story #1: Eingabe einer Ziffer -
 ----------------------------------
 Wenn ich auf eine der Zahlentasten (0-9) drücke,
 erscheint die entsprechende Ziffer im Display.

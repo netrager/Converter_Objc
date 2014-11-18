@@ -12,6 +12,8 @@
 	<dict>
 		<key>80A0C91F3ACC5CA501673F1FB51A61F0A1CE69CA</key>
 		<string>github.com:hbohlmann/Converter_Objc.git</string>
+		<key>97FF4F7554DDF59AC2D9164F1CBDB2E369BE3CFF</key>
+		<string>https://github.com/netrager/IPDC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Converter.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>80A0C91F3ACC5CA501673F1FB51A61F0A1CE69CA</key>
 		<string>../..</string>
+		<key>97FF4F7554DDF59AC2D9164F1CBDB2E369BE3CFF</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:hbohlmann/Converter_Objc.git</string>
@@ -28,6 +32,14 @@
 	<string>80A0C91F3ACC5CA501673F1FB51A61F0A1CE69CA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97FF4F7554DDF59AC2D9164F1CBDB2E369BE3CFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
