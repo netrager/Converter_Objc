@@ -60,4 +60,12 @@
     assertThat(displayLabel.text, is(@"1"));
 }
 
+- (void)testStory2{
+    [controller buttonTouched:[self buttonWithTag:1]];
+    [controller buttonTouched:[self buttonWithTag:2]];
+    [controller buttonTouched:[self buttonWithTag:4]];
+    
+    assertThat(displayLabel.text, is(@"124"));
+}
+
 @end
