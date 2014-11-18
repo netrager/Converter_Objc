@@ -60,7 +60,7 @@
     assertThat(displayLabel.text, is(@"1"));
 }
 
-- (void)testStory2{
+- (void)testStory2{ //Eingabe einer ganzen Zahl
     [controller buttonTouched:[self buttonWithTag:1]];
     [controller buttonTouched:[self buttonWithTag:2]];
     [controller buttonTouched:[self buttonWithTag:4]];
@@ -68,7 +68,7 @@
     assertThat(displayLabel.text, is(@"124"));
 }
 
-- (void)testStory3{
+- (void)testStory3{ //Beschränke die Länge
     /* // first but bad readable
     [controller buttonTouched:[self buttonWithTag:1]];
     [controller buttonTouched:[self buttonWithTag:2]];
@@ -91,4 +91,20 @@
     assertThatInt(displayLabel.text.length, equalToInt(10));
 
 }
+
+- (void)testNurEineFuehrendeNull{ //Story 4
+    displayLabel.text = @"0";
+    [controller buttonTouched:[self buttonWithTag:0]];
+    
+    assertThat(displayLabel.text, is(@"0"));
+}
+
+- (void)testEingabeVonMehrerenNullNachAndererZahl{ //Story 4
+    displayLabel.text = @"1";
+    [controller buttonTouched:[self buttonWithTag:0]];
+    [controller buttonTouched:[self buttonWithTag:0]];
+    
+    assertThat(displayLabel.text, is(@"100"));
+}
+
 @end
