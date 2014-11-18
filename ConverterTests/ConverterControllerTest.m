@@ -16,9 +16,11 @@
 #import "OCMockito/OCMockito.h"
 
 #import "ConverterController.h"
+#import "NumberPad.h"
 
 @interface ConverterController (Test)
 @property (nonatomic, weak) IBOutlet UILabel *displayLabel;
+@property (nonatomic) NumberPad *numberPad;
 - (IBAction)buttonTouched:(id)sender;
 @end
 
@@ -29,6 +31,7 @@
 @implementation ConverterControllerTest{
     ConverterController *controller;
     id displayLabel;
+    id numberPad;
 }
 
 - (void)setUp {
@@ -38,6 +41,9 @@
     controller = [[ConverterController alloc] init];
     displayLabel = mock([UILabel class]);
     controller.displayLabel = displayLabel;
+    numberPad = mock([NumberPad class]);
+    controller.numberPad = numberPad;
+   
 }
 //
 //- (void)tearDown {
@@ -45,24 +51,29 @@
 //    [super tearDown];
 //}
 
-- (UIButton *)buttonWithTag:(NSInteger)tag{
+- (id)buttonWithTag:(NSInteger)tag{
     
     id button = mock([UIButton class]);
     [given([button tag]) willReturnInteger:tag];
     return button;
 }
-- (void)testZahlDesButtonsErscheintImDisplay{
-    //arrange
+
+- (void)testControllerHatNumberPad{
+    [controller viewDidLoad];
+    assertThat(controller.numberPad, is(notNilValue()));
+}
+
+- (void)testButtonTouchWerdenAnNumberPadWeitergeleitet{
     
-    
-    //act
-    [controller buttonTouched:[self buttonWithTag:1]];
-    
-    //assert
-    
-//    assertThat(displayLabel.text, is(@"1"));
-    
-    [verify(displayLabel) setText:@"1"];
+    id button = [self buttonWithTag:1];
+    [controller buttonTouched:button];
+    [verify(numberPad) buttonTouched:button];
+}
+
+- (void)testZahlERscheintImDisplay{
+    [given([numberPad currentValue]) willReturn:@"42"];
+    [controller buttonTouched:nil];
+    [verify(displayLabel) setText:@"42"];
 }
 
 //- (void)testStory2{ //Eingabe einer ganzen Zahl

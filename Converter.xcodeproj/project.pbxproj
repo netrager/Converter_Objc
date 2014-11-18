@@ -28,6 +28,7 @@
 		26D174541A14F50700021DC0 /* CurrencyRateUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */; };
 		4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */; };
 		CF1EAB321A1B58F4000BBA07 /* ConverterControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EAB311A1B58F4000BBA07 /* ConverterControllerTest.m */; };
+		CF1EAB351A1B7813000BBA07 /* NumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EAB341A1B7813000BBA07 /* NumberPad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		940D1B5136C17D6CCD22CB80 /* Pods-ConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterTests/Pods-ConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7F28C2FA8D94B64CF496339 /* Pods-ConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterTests/Pods-ConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF1EAB311A1B58F4000BBA07 /* ConverterControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterControllerTest.m; sourceTree = "<group>"; };
+		CF1EAB331A1B7813000BBA07 /* NumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberPad.h; sourceTree = "<group>"; };
+		CF1EAB341A1B7813000BBA07 /* NumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberPad.m; sourceTree = "<group>"; };
 		CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,6 +137,8 @@
 				26381B0019CB2AA7005884FF /* Images.xcassets */,
 				26381B0219CB2AA7005884FF /* LaunchScreen.xib */,
 				26381AF319CB2AA7005884FF /* Supporting Files */,
+				CF1EAB331A1B7813000BBA07 /* NumberPad.h */,
+				CF1EAB341A1B7813000BBA07 /* NumberPad.m */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				26381AFC19CB2AA7005884FF /* ConverterController.m in Sources */,
 				26D1744E1A14DB3900021DC0 /* CurrencyRateUpdater.m in Sources */,
 				26381AF919CB2AA7005884FF /* AppDelegate.m in Sources */,
+				CF1EAB351A1B7813000BBA07 /* NumberPad.m in Sources */,
 				26381AF619CB2AA7005884FF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
