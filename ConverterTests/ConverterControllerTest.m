@@ -47,8 +47,8 @@
 
 - (UIButton *)buttonWithTag:(NSInteger)tag{
     
-    UIButton *button = [[UIButton alloc] init];
-    button.tag = tag;
+    id button = mock([UIButton class]);
+    [given([button tag]) willReturnInteger:tag];
     return button;
 }
 - (void)testZahlDesButtonsErscheintImDisplay{
